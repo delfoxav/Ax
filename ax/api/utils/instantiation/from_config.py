@@ -64,6 +64,7 @@ def parameter_from_config(
             lower=lower,
             upper=upper,
             log_scale=config.scaling == "log",
+            digits=config.digits,
         )
     elif isinstance(config, DerivedParameterConfig):
         return DerivedParameter(

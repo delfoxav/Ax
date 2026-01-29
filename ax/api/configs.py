@@ -26,6 +26,7 @@ class RangeParameterConfig:
     parameter_type: Literal["float", "int"]
     step_size: float | None = None
     scaling: Literal["linear", "log"] | None = None
+    digits: int | None = None
 
 
 @dataclass
